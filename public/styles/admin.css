@@ -1,0 +1,33 @@
+.bg-content {
+  background-color: lightgrey;
+  height: 750px;
+}
+
+.nav-link:hover {
+  background-color: black;
+}
+
+.card-dashboard-sepatu {
+  background-color: orange;
+}
+
+.card-dashboard-user {
+  background-color: turquoise;
+}
+
+.card-dashboard-order {
+  background-color: greenyellow;
+}
+
+.display-4 {
+  font-weight: bold;
+}
+
+.card-body-icon {
+  position: absolute;
+  z-index: 0;
+  top: 25px;
+  right: 4px;
+  opacity: 0.4;
+  font-size: 90px;
+}
