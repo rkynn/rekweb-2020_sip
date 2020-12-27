@@ -4,13 +4,13 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class SepatuModel extends Model
+class AboutModel extends Model
 {
-    protected $table = 'sepatu';
+    protected $table = 'about';
     protected $useTimestamps = true;
-    protected $allowedFields = ['nama', 'slug', 'size', 'style', 'deskripsi', 'gambar'];
+    protected $allowedField = ['id', 'nama', 'nrp', 'tugas', 'gambar'];
 
-    public function getSepatu($slug = false)
+    public function getAbout($slug = false)
     {
         if ($slug == false) {
             return $this->findAll();

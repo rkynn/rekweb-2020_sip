@@ -12,7 +12,7 @@
         <h5>
             <i class="fas fa-envelope mr-3" data-toggle="tooltip" title="Inbox"></i>
             <i class="fas fa-bell mr-3" data-toggle="tooltip" title="Notification"></i>
-            <i class="fas fa-sign-out-alt mr-3" data-toggle="tooltip" title="Logout"></i>
+            <a href="/logout" class="text-white"><i class="fas fa-sign-out-alt mr-3" data-toggle="tooltip" title="Logout"></i></a>
         </h5>
     </div>
 
