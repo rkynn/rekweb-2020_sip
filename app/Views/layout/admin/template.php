@@ -20,7 +20,7 @@
 <body>
     <?= $this->include('layout/admin/navbar'); ?>
     <div class="row no-gutters">
-        <div class="col-md-2 bg-secondary pt-4 pr-5">
+        <div class="col-md-2 bg-dark pt-2 pr-2 border-top border-secondary">
             <?= $this->include('layout/admin/sidebar'); ?>
         </div>
 

@@ -25,9 +25,27 @@ class Admin extends BaseController
 
     public function daftar_sepatu()
     {
+        //cari 
+        $currentPage = $this->request->getVar('page_sepatu') ? $this->request->getVar('page_sepatu') : 1;
+
+        // d($this->request->getVar('keyword'));
+
+        $keyword = $this->request->getVar('keyword');
+        if ($keyword) {
+            $this->sepatuModel->search($keyword);
+        } else {
+            $sepatu = $this->sepatuModel;
+        }
+
+        $sepatu = $this->sepatuModel;
+
+        //end cari
+
         $data = [
             'title' => 'Daftar Sepatu',
-            'sepatu' => $this->sepatuModel->getSepatu()
+            'sepatu' => $sepatu->paginate(3, 'sepatu'),
+            'pager' => $this->sepatuModel->pager,
+            'currentPage' => $currentPage
         ];
 
         return view('admin/daftar-sepatu', $data);

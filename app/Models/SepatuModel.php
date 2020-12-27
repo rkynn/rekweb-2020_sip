@@ -18,4 +18,9 @@ class SepatuModel extends Model
 
         return $this->where(['slug' => $slug])->first();
     }
+
+    public function search($keyword)
+    {
+        return $this->table('sepatu')->like('nama', $keyword);
+    }
 }

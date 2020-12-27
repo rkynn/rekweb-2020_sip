@@ -6,8 +6,13 @@
   background-color: lightgrey;
 }
 
-.nav-link:hover {
-  background-color: black;
+.nav-link {
+  color: whitesmoke;
+}
+
+.aHover:hover {
+  /* background-color: black; */
+  color: black;
 }
 
 .card-dashboard-sepatu {
@@ -37,4 +42,16 @@
 
 .gambar {
   width: 70px;
+}
+
+.aLogout:hover {
+  background-color: darkgray;
+}
+
+/* css sidebar */
+.header-menu {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 15px 20px 5px 10px;
+  display: inline-block;
 }

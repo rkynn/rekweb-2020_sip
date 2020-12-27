@@ -3,16 +3,16 @@
 
     <a class="navbar-brand text-white" href="#">.SIP ADMIN</a>
 
-    <form class="form-inline my-2 my-lg-0 ml-auto">
+    <!-- <form class="form-inline my-2 my-lg-0 ml-auto">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    </form> -->
 
-    <div class="icon text-white ml-4">
+    <div class="icon text-white ml-auto">
         <h5>
             <i class="fas fa-envelope mr-3" data-toggle="tooltip" title="Inbox"></i>
             <i class="fas fa-bell mr-3" data-toggle="tooltip" title="Notification"></i>
-            <a href="/logout" class="text-white"><i class="fas fa-sign-out-alt mr-3" data-toggle="tooltip" title="Logout"></i></a>
+            <a href="/logout" class="text-white aLogout"><i class="fas fa-sign-out-alt" data-toggle="tooltip" title="Logout"></i></a>
         </h5>
     </div>
 

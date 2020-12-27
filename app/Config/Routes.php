@@ -40,6 +40,7 @@ $routes->get('/sepatu/(:any)', 'sepatu::detail/$1');
 // $routes->get('/admin', 'User::index');
 $routes->get('/admin', 'Admin\Admin::index');
 $routes->get('/admin/daftar-sepatu', 'Admin\Admin::daftar_sepatu');
+$routes->get('/admin/daftar-sepatu/(:segment)', 'Admin\Admin::daftar_sepatu');
 $routes->get('/admin/daftar-user', 'Admin\Admin::daftar_user');
 $routes->get('/admin/daftar-order', 'Admin\Admin::daftar_order');
 $routes->get('/admin/create-sepatu', 'Admin\Admin::create_sepatu');
